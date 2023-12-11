@@ -5,11 +5,11 @@ using UnityEngine;
 public class TimeElapsed : MonoBehaviour
 {
     [SerializeField]
-    private float rotateSpeed = 0.5f;
     public Material sky;
     public Material night;
     private Material skyboxMaterial;
     private float time = 0;
+    private bool tf = false;
     void Start()
     {
         RenderSettings.skybox = Instantiate(sky);
@@ -19,15 +19,17 @@ public class TimeElapsed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time++;
-        if (time < 2500) {
+        // Time.sincelevelLoad += Time.deltaTime;
+        time += Time.deltaTime;
+        if (time < 10.0f) {
             var c = skyboxMaterial.GetColor("_Tint");
             c.r -= 0.0002f;
             c.g -= 0.0002f;
             c.b -= 0.0002f;
             skyboxMaterial.SetColor("_Tint", c);
         }
-        else if (time == 2500) {
+        else if (time > 10.0f && !tf) {
+            tf = true;
             RenderSettings.skybox = Instantiate(night);
         }
 	}
