@@ -387,6 +387,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/Base_Button.cs"
 "Assets/Scripts/CameraCtrl.cs"
+"Assets/Scripts/Title_Button.cs"
 -langversion:9.0
 
 /deterministic

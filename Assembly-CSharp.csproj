@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraCtrl.cs" />
+    <Compile Include="Assets\Scripts\Title_Button.cs" />
     <Compile Include="Assets\Scripts\Base_Button.cs" />
   </ItemGroup>
   <ItemGroup>
