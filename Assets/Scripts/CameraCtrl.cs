@@ -45,7 +45,7 @@ public class CamCtrl : MonoBehaviour
             // rotate camera
             float rotateX = Input.GetAxis("Mouse X") * SENSITIVERORATE;
             float rotateY = Input.GetAxis("Mouse Y") * SENSITIVERORATE;
-            cam.transform.eulerAngles += new Vector3(rotateY, rotateX, 0.0f);
+            cam.transform.eulerAngles += new Vector3(rotateY, -rotateX, 0.0f);
         }
         
         
