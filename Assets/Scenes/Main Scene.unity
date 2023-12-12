@@ -479,6 +479,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -746,6 +747,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010394748, y: 2.910383e-11, z: 0.0058358754}
   m_Center: {x: 0, y: -0.00011693603, z: 0.0049547404}
+=======
+  m_Script: {fileID: 11500000, guid: 377a2cebf292a455d895d9f9de9a892c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 0
+  sky: {fileID: 2100000, guid: 5d133deeaa66ed445853e946ff25e073, type: 2}
+>>>>>>> origin/feature-furniture
 --- !u!33 &2552209625151459834
 MeshFilter:
   m_ObjectHideFlags: 0
