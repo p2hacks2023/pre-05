@@ -12,7 +12,7 @@ public class TimeElapsed : MonoBehaviour
     // スカイボックスを格納する変数
     private Material skyboxMaterial;
     // 経過時間を格納する変数
-    private float time = 0;
+    private float time = 0.0f;
     // 夜になったかどうかを判定する変数
     private bool tf = false;
     void Start()
@@ -25,9 +25,9 @@ public class TimeElapsed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
         // 時間経過で空を暗くしたり、夜になったりする
         // Time.sincelevelLoad += Time.deltaTime;
-        time += Time.deltaTime;
         if (time < 10.0f) {
             var c = skyboxMaterial.GetColor("_Tint");
             c.r -= 0.0002f;
