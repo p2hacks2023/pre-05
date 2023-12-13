@@ -5,18 +5,19 @@ using UnityEngine;
 public class CamCtrl : MonoBehaviour
 {
     private Camera cam;
-    private Vector3 startPos;
-    private Vector3 startAngle;
-    private float camX, camY, camZ; // cameraの座標
-    private float speed;
+    private float CAMX, CAMY, CAMZ, CAMRX, CAMRY, CAMRZ; // cameraの座標
  
     // Start is called before the first frame update
     void Start()
     {
-        cam = GetComponent<Camera>();
-        camX = 0.0f;
-        camY = 1.0f;
-        camZ = -10.0f;
+        cam = GetComponent<Camera>();//カメラを使用するための設定。（取得）
+        CAMX = 3.0f;//カメラの初期位置
+        CAMY = 3.30f;
+        CAMZ = -5.0f;
+
+        CAMRX = 20.0f;//カメラの初期位置(角度)
+        CAMRY = -27.0f;
+        CAMRZ = 0.0f;
     }
  
     // Update is called once per frame
@@ -27,34 +28,54 @@ public class CamCtrl : MonoBehaviour
             return;
         }
  
-        float sensitiveMove = 0.8f;
-        float sensitiveRotate = -2.0f;
-        float sensitiveZoom = 10.0f;
-        float dontMove = 0.0f;
+        float SENSITIVEMOVE = 0.8f;//カメラ動き感度
+        float SENSITIVERORATE = -2.0f;//カメラ回転感度。-を消すと操作が反転
+        float SENSITIVEZOOM = 10.0f;//ズーム感度
+    
  
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))//カメラをマウスの左クリックで動かす。現在は無効化
         {
             // move camera
-            float moveX = Input.GetAxis("Mouse X") * sensitiveMove;
-            float moveY = Input.GetAxis("Mouse Y") * sensitiveMove;
+            float moveX = Input.GetAxis("Mouse X") * SENSITIVEMOVE;
+            float moveY = Input.GetAxis("Mouse Y") * SENSITIVEMOVE;
            // cam.transform.localPosition -= new Vector3(moveX, moveY, 0.0f);
-              cam.transform.position += cam.transform.forward * moveX;
         }
-        else if (Input.GetMouseButton(1))
+        else if (Input.GetMouseButton(1))//カメラの回転
         {
             // rotate camera
-            float rotateX = Input.GetAxis("Mouse X") * sensitiveRotate;
-            float rotateY = Input.GetAxis("Mouse Y") * sensitiveRotate;
-            cam.transform.eulerAngles += new Vector3(rotateY, rotateX, 0.0f);
+            float rotateX = Input.GetAxis("Mouse X") * SENSITIVERORATE;
+            float rotateY = Input.GetAxis("Mouse Y") * SENSITIVERORATE;
+            cam.transform.eulerAngles += new Vector3(rotateY, -rotateX, 0.0f);
         }
         
-        if (Input.GetKey(KeyCode.LeftControl)){
-        cam.transform.localPosition = new Vector3(camX, camY, camZ);
-        cam.transform.eulerAngles = new Vector3(0.0f, 0.0f, 0.0f);
+        
+        if (Input.GetKey(KeyCode.LeftControl)){//カメラのリセット
+        cam.transform.localPosition = new Vector3(CAMX, CAMY, CAMZ);
+        cam.transform.eulerAngles = new Vector3(CAMRX, CAMRY, CAMRZ);
         }
+        
+        if (Input.GetKeyDown(KeyCode.W)){//カメラのWASD移動
+        cam.transform.position += cam.transform.forward * 1;
+        }
+        if (Input.GetKeyDown(KeyCode.S)){
+        cam.transform.position += cam.transform.forward * -1;
+        }
+        if (Input.GetKeyDown(KeyCode.A)){
+        cam.transform.position += cam.transform.right * -1;
+        }
+        if (Input.GetKeyDown(KeyCode.D)){
+        cam.transform.position += cam.transform.right * 1;
+        }
+        if (Input.GetKeyDown(KeyCode.E)){
+        cam.transform.position += cam.transform.up * 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Q)){
+        cam.transform.position += cam.transform.up * -1;
+        }
+   
  
-        // zoom camera
-        float moveZ = Input.GetAxis("Mouse ScrollWheel") * sensitiveZoom;
+        //カメラのズーム
+        float moveZ = Input.GetAxis("Mouse ScrollWheel") * SENSITIVERORATE;
         cam.transform.position += cam.transform.forward * moveZ;
     }
 }
