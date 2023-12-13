@@ -3613,6 +3613,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.32705498
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4580119
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.7155695
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.24158627
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.24167067
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6646577
+      objectReference: {fileID: 0}
+    - target: {fileID: -9153605008158484600, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6644258
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a99d94c74f8934d4385e5fbd395e4072, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.57199204
@@ -4387,8 +4427,6 @@ GameObject:
   - component: {fileID: 543450652135896036}
   - component: {fileID: 919132148470114655}
   - component: {fileID: 919132148470114657}
-  - component: {fileID: 919132148470114659}
-  - component: {fileID: 919132148470114660}
   m_Layer: 0
   m_Name: refrigerator
   m_TagString: Untagged
@@ -4433,56 +4471,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!65 &919132148470114659
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148470114654}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 0.6}
-  m_Center: {x: 0.2, y: 0.9, z: 0}
---- !u!114 &919132148470114660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148470114654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 7675636005826968582}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: ResetTrigger
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: FridgeOpen
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!4 &1166526058998152973
 Transform:
   m_ObjectHideFlags: 0
@@ -4510,6 +4498,8 @@ GameObject:
   - component: {fileID: 7369054326476804095}
   - component: {fileID: 7133354684693312106}
   - component: {fileID: 9210243509855261827}
+  - component: {fileID: 9210243509855261828}
+  - component: {fileID: 9210243509855261829}
   m_Layer: 0
   m_Name: Fridge_back
   m_TagString: Untagged
@@ -5311,6 +5301,88 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9210243509855261828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389553227124066655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7675636005826968582}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: FridgeOpen
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1658804460}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: FridgeOpen
+            m_BoolArgument: 1
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1658804460}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: FridgeOpen
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!65 &9210243509855261829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389553227124066655}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.006902565, y: 0.0070045805, z: 0.018640812}
+  m_Center: {x: 0.002390351, y: 0.00067354593, z: -0.0023191152}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
