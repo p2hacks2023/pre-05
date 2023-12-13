@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Parameter : MonoBehaviour
 {
+    public float time = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class Parameter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        time += Time.deltaTime;
     }
 }
