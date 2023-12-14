@@ -21,12 +21,35 @@ public class Parameter : MonoBehaviour
 
     //以下ゲーム内購入アイテム
 
+
+    //各アイテムの表示名
+    public string ITEMNAME0 = "アイスクリーム";
+    public string ITEMNAME1 = "スイカ";
+    public string ITEMNAME2 = "ホットコーヒー";
+    public string ITEMNAME3 = "さかな";
+
+
     //アイスクリームの所持数
     public int icecream = 0;
     //スイカの所持数
     public int watermelon = 0;
     //ホットコーヒーの所持数
     public int coffe = 0;
+    //魚の所持数
+    public int fish = 0;
+
+    //アイスクリームの価格
+    public int ICECREAMPRICE = 100;
+    //スイカの価格
+    public int WATERMELONPRICE = 200;
+    //ホットコーヒーの価格
+    public int COFFEPRICE = 120;
+    //魚の価格
+    public int FISHPRICE = 80;
+
+
+
+
 
 
     // Start is called before the first frame update
