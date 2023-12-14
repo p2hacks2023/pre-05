@@ -7,6 +7,6 @@ public class GameSystem : MonoBehaviour
 
 	public void startGame()
 	{
-		SceneManager.LoadScene("Main Scene");
+		SceneManager.LoadScene("Opening");
 	}
 }
