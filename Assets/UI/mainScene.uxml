@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/mainScene.uss?fileID=7433441132597879392&amp;guid=0511cfdcb17334db886764c0226a23dd&amp;type=3#mainScene" />
+    <ui:VisualElement style="flex-grow: 1; width: 20px; align-items: flex-start; flex-direction: row; height: 20px;">
+        <ui:Button style="background-image: url(&apos;project://database/Assets/UI/Images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-12-14%2023.54.36.png?fileID=2800000&amp;guid=2b4c8dd2bfd5843b3a7b9c46738cfd79&amp;type=3#スクリーンショット 2023-12-14 23.54.36&apos;); height: auto; width: auto;" />
+        <ui:Label text="ひんやりゲージ" name="hinyari-gage" style="-unity-font-definition: url(&apos;project://database/Assets/Fungus/Fonts/Amaranth/Amaranth-Regular.otf?fileID=12800000&amp;guid=bb145366ce7024469a5758b08d31802c&amp;type=3#Amaranth-Regular&apos;); width: 122px;" />
+    </ui:VisualElement>
+</ui:UXML>
