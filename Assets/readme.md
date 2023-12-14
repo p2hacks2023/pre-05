@@ -6,3 +6,4 @@
 ・Scenes-sceneを格納
 ・Scripts-スクリプトを格納
 ・SkySeries Freebie-Skyboxのアセット
+iroiroyaru
