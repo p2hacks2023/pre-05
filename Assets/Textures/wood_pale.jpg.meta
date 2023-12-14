@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6d92e59d09ea69a4687b9fb59f48ba04
+=======
+guid: f56620c1d30be2445b391b0137ab5083
+>>>>>>> feature-roomTexturesFinished
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

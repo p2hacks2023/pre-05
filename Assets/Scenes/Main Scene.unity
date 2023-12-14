@@ -2741,10 +2741,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1990968323811559735, guid: 21d23541b976b5a45a8a6cea7f1398b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3860d9b9ea72971458496da2fde79abf, type: 2}
     - target: {fileID: -685985848149224223, guid: 21d23541b976b5a45a8a6cea7f1398b8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 726642ddb53a2bd4985fb9c6888fa359, type: 2}
+      objectReference: {fileID: 2100000, guid: 5747caad609f87142b24ea22cbfc049c, type: 2}
     - target: {fileID: 919132149155446097, guid: 21d23541b976b5a45a8a6cea7f1398b8, type: 3}
       propertyPath: m_Name
       value: closet_fixed
@@ -2911,11 +2915,11 @@ PrefabInstance:
     - target: {fileID: -1461304994638716399, guid: 03b178ebf6240ba46a3fcf427d002dd7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2935676538664869846, guid: 5a44a74bcca164b3bae483b9b3a48298, type: 3}
+      objectReference: {fileID: 2100000, guid: 46aa0e09acffd854fab954033ba0bfa3, type: 2}
     - target: {fileID: -678588488315902003, guid: 03b178ebf6240ba46a3fcf427d002dd7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ea72a664c0da2bf40bb14b8c66ceb3b4, type: 2}
+      objectReference: {fileID: 2100000, guid: 3860d9b9ea72971458496da2fde79abf, type: 2}
     - target: {fileID: 919132149155446097, guid: 03b178ebf6240ba46a3fcf427d002dd7, type: 3}
       propertyPath: m_Name
       value: windowFrame2 1
@@ -4156,6 +4160,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 822c71c48cdff364e9640c2b1aa37d1b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 273ad379bd2e7da4d9f203069446fca0, type: 2}
     - target: {fileID: 919132149155446097, guid: 822c71c48cdff364e9640c2b1aa37d1b, type: 3}
       propertyPath: m_Name
       value: bookShelf_fixed
@@ -4225,6 +4233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 822c71c48cdff364e9640c2b1aa37d1b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 273ad379bd2e7da4d9f203069446fca0, type: 2}
     - target: {fileID: 919132149155446097, guid: 822c71c48cdff364e9640c2b1aa37d1b, type: 3}
       propertyPath: m_Name
       value: bookShelf_fixed (1)
