@@ -18,6 +18,17 @@ public class Parameter : MonoBehaviour
     public string catName = "概念ﾈｺ";
     // 所持金
     public int money = 0;
+
+    //以下ゲーム内購入アイテム
+
+    //アイスクリームの所持数
+    public int icecream = 0;
+    //スイカの所持数
+    public int watermelon = 0;
+    //ホットコーヒーの所持数
+    public int coffe = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
