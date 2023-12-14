@@ -1,0 +1,35 @@
+:root {
+    --mergin: 14px;
+}
+.lt {
+    position: absolute;
+    left: var(--mergin);
+    top: var(--mergin);
+}
+.rt {
+    position: absolute;
+    right: var(--mergin);
+    top: var(--mergin);
+}
+.lb {
+    position: absolute;
+    left: var(--mergin);
+    bottom: var(--mergin);
+}
+#BtnTapToStart {
+    top: auto;
+    width: 302px;
+    height: 80px;
+    position: absolute;
+    bottom: 18%;
+    font-size: 26px;
+    opacity: 1;
+    background-image: url('/Assets/UI/Images/pic.png');
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-left: 10;
+    -unity-slice-top: 10;
+    -unity-slice-right: 10;
+    -unity-slice-bottom: 10;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(210, 210, 210);
+}
