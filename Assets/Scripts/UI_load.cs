@@ -16,7 +16,7 @@ public class UI_load : MonoBehaviour
     {
         time = _uiDocument.rootVisualElement.Q<Label>("time");
         templature = _uiDocument.rootVisualElement.Q<Label>("templature");
-        parameter = GameObject.Find("GameSystemUI").GetComponent<Parameter>();
+        parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
     }
 
     // Update is called once per frame
