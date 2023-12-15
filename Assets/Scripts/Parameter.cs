@@ -19,7 +19,9 @@ public class Parameter : MonoBehaviour
     // 所持金
     public int money = 0;
 
-    //以下ゲーム内購入アイテム
+
+
+    //以下ゲーム内購入アイテム----------
 
 
     //各アイテムの表示名
@@ -27,7 +29,6 @@ public class Parameter : MonoBehaviour
     public string ITEMNAME1 = "スイカ";
     public string ITEMNAME2 = "ホットコーヒー";
     public string ITEMNAME3 = "さかな";
-
 
     //アイスクリームの所持数
     public int icecream = 0;
@@ -48,7 +49,12 @@ public class Parameter : MonoBehaviour
     public int FISHPRICE = 80;
 
 
+    //以下shop動作用変数------
 
+    //ショップ内でアイテムの画像を押したときにどのアイテムか判別する変数
+    //0~3の値でクリックされたボタンを別スクリプトにて検知。
+    public int shopItemSelect = 0;
+    
 
 
 
