@@ -3,59 +3,37 @@
 }
 .left {
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 5%;
+    top: 0px;
 }
-.pose {
-    background-image: url("/Assets/UI/Images/logo.png");
-    height: auto;
-    width: 10%;
-    border-top-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
+.frameBlack {
+    background-color: black;
+    border-radius: 0% 0% 5px 5px; 
 }
-.right {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-.righttop {
+.frameBlue {
+    background-color: #AAC8FF;
+    border-radius: 0% 0% 5px 5px; 
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
     flex-direction: row;
-}
-.templature {
-    position: relative;
-    right: 20px;
-    flex-direction: row;
-}
-.templatureLogo {
-    background-image: url("/Assets/UI/Images/1841.png");
-    height: 30px;
-    width: 30px;
 }
 .time {
-    background-image: url("/Assets/UI/Images/frame.png");
-    padding-left: 5px;
-    padding-right: 5px:
-    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
 }
-.meter {
-    position: relative;
-    top: 30px;
-    right: -10px;
+.templatureFrame {
+    flex-direction: row;
+    padding-right: 10px;
 }
-.meterOut {
-    position: relative;
-    right: 50px;
-    height:100px;
-    width:20px;
-    background-color: white;
-    align-self: flex-end;
+.templatureFrame Label {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: white;
 }
-.meterIn {
-    height: 30%;
-    background-color: gray;
-}
-.meterLabel {
-    size: 10%;
+popup {
+    aglign-items: center;
 }
