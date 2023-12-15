@@ -20,9 +20,16 @@
     flex-direction: row;
 }
 .time {
+    flex-direction: row;
     padding-right: 10px;
     padding-left: 10px;
     color: white;
+}
+.hour {
+    margin-right: 0px;
+}
+.minute {
+    margin-left: 0px;
 }
 .templatureFrame {
     flex-direction: row;
