@@ -3306,6 +3306,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!108 &1432525020 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 2926494832683203227, guid: 2f0298d7968dc3240b94f3911aa7c53b, type: 3}
+  m_PrefabInstance: {fileID: 1101444483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1436412964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,7 +3920,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  camera: {fileID: 0}
+  camera: {fileID: 963194227}
+  day: {fileID: 1436412965}
+  night: {fileID: 1030913390}
+  deskLight: {fileID: 1432525020}
 --- !u!1001 &1729997517
 PrefabInstance:
   m_ObjectHideFlags: 0
