@@ -1,0 +1,40 @@
+.japaneseFont {
+    -unity-font-definition: url('/Assets/Fungus/Fonts/Amaranth/Amaranth-Regular.otf');
+    font-size: 30px;
+}
+.left {
+    position: absolute;
+    left: 5%;
+    top: 0px;
+}
+.frameBlack {
+    background-color: black;
+    border-radius: 0% 0% 5px 5px; 
+}
+.frameBlue {
+    background-color: #AAC8FF;
+    border-radius: 0% 0% 5px 5px; 
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    flex-direction: row;
+}
+.time {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.templatureFrame {
+    flex-direction: row;
+    padding-right: 10px;
+}
+.templatureFrame Label {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: white;
+}
+popup {
+    aglign-items: center;
+}
