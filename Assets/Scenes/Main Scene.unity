@@ -3915,7 +3915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  camera: {fileID: 963194227}
+  camera: {fileID: 0}
 --- !u!1001 &1729997517
 PrefabInstance:
   m_ObjectHideFlags: 0
