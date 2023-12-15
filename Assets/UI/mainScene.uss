@@ -1,5 +1,6 @@
 .japaneseFont {
     -unity-font-definition: url('/Assets/Fungus/Fonts/Amaranth/Amaranth-Regular.otf');
+    font-size: 30px;
 }
 .left {
     position: absolute;

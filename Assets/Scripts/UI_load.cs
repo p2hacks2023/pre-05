@@ -7,16 +7,22 @@ using UnityEngine.UIElements;
 public class UI_load : MonoBehaviour
 {
     [SerializeField] private UIDocument _uiDocument;
-    Time time;
+    Label time;
+    Label templature;
+    Parameter parameter;
+
     // Start is called before the first frame update
     void Start()
     {
-        time = _uiDocument.rootVisualElement.Q("time");
+        time = _uiDocument.rootVisualElement.Q<Label>("time");
+        templature = _uiDocument.rootVisualElement.Q<Label>("templature");
+        parameter = GameObject.Find("GameSystemUI").GetComponent<Parameter>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        time.text = "Hello World!";
+        time.text = "経過時間：" + parameter.time.ToString("0") + "秒";
+        templature.text = parameter.temperature.ToString();
     }
 }
