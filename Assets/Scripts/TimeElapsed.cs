@@ -16,14 +16,14 @@ public class TimeElapsed : MonoBehaviour
     public Light night;
     public Light deskLight;
     
-    
+    // 0.5235849 0.8560204 1 1
     void Start()
     {
         parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
         day.enabled = true;
         night.enabled = false;
         deskLight.enabled = false;
-        camera.backgroundColor = new Color(0, 0.777f, 1, 1);
+        camera.backgroundColor = new Color(0.5235849f, 0.8560204f, 1, 1);
     }
 
     // Update is called once per frame
@@ -33,17 +33,18 @@ public class TimeElapsed : MonoBehaviour
         // 時間経過で空を暗くしたり、夜になったりする
         // Time.sincelevelLoad += Time.deltaTime;
         if (dayNum == 0) {
-            if (parameter.time > 5f) {
+            if (parameter.time > 60f) {
                 dayNum = 1;
                 day.enabled = false;
                 night.enabled = true;
                 deskLight.enabled = true;
-                camera.backgroundColor = new Color(0.6132076f, 0.2983172f, 0, 1);
+                // camera.backgroundColor = new Color(0.6132076f, 0.2983172f, 0, 1);/
+                camera.backgroundColor = new Color(0.03918803f, 0, 0.2264151f, 1);
             }
         
         }
         if (dayNum == 1) {
-            if (parameter.time > 10f) {
+            if (parameter.time > 120f) {
                 dayNum = 2;
                 night.enabled = false;
                 camera.backgroundColor = new Color(0.03918803f, 0, 0.2264151f, 1);
