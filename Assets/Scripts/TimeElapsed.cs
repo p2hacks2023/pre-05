@@ -32,6 +32,7 @@ public class TimeElapsed : MonoBehaviour
         // time += Time.deltaTime;
         // 時間経過で空を暗くしたり、夜になったりする
         // Time.sincelevelLoad += Time.deltaTime;
+        // 昼の時間と夜の時間はそれぞれ1分
         if (dayNum == 0) {
             if (parameter.time > 60f) {
                 dayNum = 1;
