@@ -3,7 +3,11 @@
     <ui:VisualElement class="left">
         <ui:VisualElement class="frameBlack">
             <ui:VisualElement class="frameBlue">
-                <ui:Label text="P.M.5:00" class="time japaneseFont" name="time" />
+                <ui:VisualElement class="time">
+                    <ui:Label text="HH" class="hour japaneseFont" name="hour" />
+                    <ui:Label text=":" class="japaneseFont" />
+                    <ui:Label text="mm" class="japaneseFont minutes" name="minutes"/>
+                </ui:VisualElement>
                 <ui:VisualElement class="templatureFrame">
                     <ui:Label text="30" class="templature japaneseFont" name="templature"/>
                     <ui:Label text="°C" class="japaneseFont" />
