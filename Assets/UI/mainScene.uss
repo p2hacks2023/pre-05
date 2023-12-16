@@ -78,3 +78,56 @@
     border-bottom-width: 0px;
     border-left-width: 0px;
 }
+.airCon {
+    background-image: url('/Assets/UI/Images/aircon.png');
+    height: 380px;
+    width: 200px;
+    flex-direction: row;
+    align-self: flex-end;
+}
+.airconFrame {
+    flex-direction: row;
+    color: gray;
+    position: relative;
+    top: 80px;
+    left: 70px;
+}
+.airconTemp {
+    margin-right: 30px;
+}
+.airconTurn {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 210px;
+    left:10px;
+    background-color: clear;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+.airconUp {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 175px;
+    left: 35px;
+    background-color: clear;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+.airconDown {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 248px;
+    left: -15px;
+    background-color: clear;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
