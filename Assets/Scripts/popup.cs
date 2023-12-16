@@ -195,7 +195,14 @@ public class popup : MonoBehaviour
 
         yesButton.clicked += deleteFrige;
         yesButton.clicked += clickedNo;
+        yesButton.clicked += eatWatermelon;
         noButton.clicked += clickedNo;
+    }
+    public void eatWatermelon(){
+        if(Parameter.watermelon>=1){
+            Parameter.watermelon -= 1;
+            parameter.cool += 40;
+        }
     }
     void deleteFrige()
     {
