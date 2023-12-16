@@ -1050,12 +1050,8 @@ RectTransform:
   - {fileID: 1341921542}
   - {fileID: 1753448446}
   - {fileID: 1563416991}
-<<<<<<< HEAD
   - {fileID: 929270994}
   - {fileID: 89610402}
-=======
-  - {fileID: 880946475}
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1063,11 +1059,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
-<<<<<<< HEAD
 --- !u!1 &929270993
-=======
---- !u!1 &880946474
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1075,73 +1067,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 929270994}
   - component: {fileID: 929270997}
   - component: {fileID: 929270996}
   - component: {fileID: 929270995}
   m_Layer: 5
   m_Name: BackMain
-=======
-  - component: {fileID: 880946475}
-  - component: {fileID: 880946478}
-  - component: {fileID: 880946477}
-  - component: {fileID: 880946476}
-  m_Layer: 5
-  m_Name: BackButton
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!224 &929270994
-=======
---- !u!224 &880946475
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 929270993}
-=======
-  m_GameObject: {fileID: 880946474}
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< HEAD
   - {fileID: 54875512}
-=======
-  - {fileID: 1619450383}
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   m_Father: {fileID: 827969294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -350, y: -200}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 150, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
 --- !u!114 &929270995
-=======
---- !u!114 &880946476
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 929270993}
-=======
-  m_GameObject: {fileID: 880946474}
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -1175,46 +1138,29 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-<<<<<<< HEAD
   m_TargetGraphic: {fileID: 929270996}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 942501985}
         m_TargetAssemblyTypeName: SceneButton, Assembly-CSharp
-=======
-  m_TargetGraphic: {fileID: 880946477}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 367965751}
-        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
-        m_MethodName: moveMain
-        m_Mode: 1
+        m_MethodName: 
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-<<<<<<< HEAD
 --- !u!114 &929270996
-=======
---- !u!114 &880946477
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 929270993}
-=======
-  m_GameObject: {fileID: 880946474}
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1238,17 +1184,12 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<< HEAD
 --- !u!222 &929270997
-=======
---- !u!222 &880946478
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 929270993}
   m_CullTransparentMesh: 1
 --- !u!1 &942501984
@@ -1295,10 +1236,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_GameObject: {fileID: 880946474}
-  m_CullTransparentMesh: 1
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 --- !u!1 &1011475793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,7 +2478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 70}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546111286
@@ -2603,7 +2540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1563416991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2693,7 +2630,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 880946475}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3426,8 +3363,6 @@ SceneRoots:
   - {fileID: 827969294}
   - {fileID: 1861215600}
   - {fileID: 787020512}
-<<<<<<< HEAD
   - {fileID: 942501986}
-=======
   - {fileID: 367965752}
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
+  - {fileID: 1619450383}

@@ -21,12 +21,7 @@ public class Parameter : MonoBehaviour
     // 猫の名前
     public string catName = "概念ﾈｺ";
     // 所持金
-<<<<<<< HEAD
     public static int money = 1000;
-=======
-    public static int money = 0;
->>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
-
 
 
     //以下ゲーム内購入アイテム----------
