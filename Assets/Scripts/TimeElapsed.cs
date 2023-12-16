@@ -29,12 +29,10 @@ public class TimeElapsed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // time += Time.deltaTime;
-        // 時間経過で空を暗くしたり、夜になったりする
         // Time.sincelevelLoad += Time.deltaTime;
-        // 昼の時間と夜の時間はそれぞれ1分
+        // 昼の時間と夜の時間はそれぞれ96秒 １秒で5分が経過
         if (dayNum == 0) {
-            if (parameter.time > 60f) {
+            if (parameter.time > 96f) {
                 dayNum = 1;
                 day.enabled = false;
                 night.enabled = true;
