@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 653d6288c2fb78044b75ee8069650868
+timeCreated: 1505420629
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101035
+  packageName: Fireworks
+  packageVersion: 1.0
+  assetPath: Assets/Fireworks/Rocket 3/Prefab/Rocket 3.prefab
+  uploadId: 206359

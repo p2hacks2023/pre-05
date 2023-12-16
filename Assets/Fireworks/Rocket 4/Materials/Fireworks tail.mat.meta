@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0f65af387180f484bb60ea2aedd1898f
+timeCreated: 1505044844
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101035
+  packageName: Fireworks
+  packageVersion: 1.0
+  assetPath: Assets/Fireworks/Rocket 4/Materials/Fireworks tail.mat
+  uploadId: 206359
