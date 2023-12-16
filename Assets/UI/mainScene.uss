@@ -173,3 +173,53 @@
     border-bottom-width: 0px;
     border-left-width: 0px;
 }
+.useQuestion {
+    background-image: url('/Assets/UI/Images/useQuestion.png');
+    height: 100%;
+    width: auto;
+    flex-direction: row;
+}
+.frige {
+    background-image: url('/Assets/UI/Images/frige.png');
+    height: 380px;
+    width: 200px;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    width: 50%;
+    height: 60%; 
+}
+.items {
+    position: relative;
+    top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    flex-direction: row;
+
+}
+.item {
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+.suika {
+    background-image: url("/Assets/ShopTextures/nekoWaternelon.png");
+    height: 20%;
+    width: 20%;
+}
+.fish {
+    background-image: url("/Assets/ShopTextures/nokoFish.png");
+    height: 20%;
+    width: 20%;
+}
+.ice {
+    background-image: url("/Assets/ShopTextures/nekoIcecream.png");
+    height: 20%;
+    width: 20%;
+}
+.coffee {
+    background-image: url("/Assets/ShopTextures/nekoCoffe.png");
+    height: 20%;
+    width: 20%;
+}

@@ -14,7 +14,7 @@ public class SceneButton : MonoBehaviour
 	
 	void Start()
     {
-        parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
+       //parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
 
     }
 
