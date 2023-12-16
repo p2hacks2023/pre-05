@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class TimeElapsed : MonoBehaviour
 {
@@ -39,6 +41,11 @@ public class TimeElapsed : MonoBehaviour
                 deskLight.enabled = true;
                 // camera.backgroundColor = new Color(0.6132076f, 0.2983172f, 0, 1);/
                 camera.backgroundColor = new Color(0.03918803f, 0, 0.2264151f, 1);
+                if (Parameter.fireworks == 0)
+                {
+                    Parameter.fireworks = 1;         
+                    SceneManager.LoadScene("FireworksOpening");       
+                }
             }
         
         }
