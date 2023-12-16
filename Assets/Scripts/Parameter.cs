@@ -13,13 +13,15 @@ public class Parameter : MonoBehaviour
     // ゲーム内時間
     public float time = 0.0f;
     // 部屋の気温
-    public float temperature = 0.0f;
+    public float temperature = 32.0f;
     // 天気
     public int weather = 0;
     // ひんやり度
-    public int cool = 0;
+    public int cool = 2020;
+    //エアコンのOnOff認識　0->off 1->0n
+    public int airconSwitch =0;
     // エアコンの温度
-    public int airconditioner = 0;
+    public int airconditioner = 25;
     // 猫の名前
     public string catName = "概念ﾈｺ";
     // 所持金
@@ -72,12 +74,21 @@ public class Parameter : MonoBehaviour
         element = _uiDocument.rootVisualElement.Q("meterFrontground");
         sceneLoad += 1;
 
-        if(sceneLoad!=1){
+        if(sceneLoad<1){//初期化
+            PlayerPrefs.SetFloat("timeSaved", 0.0f);
+            PlayerPrefs.SetFloat("temperatureSaved", 32.0f);
+            PlayerPrefs.SetInt("weatherSaved", 0);
+            PlayerPrefs.SetInt("coolSaved", 50);
+            PlayerPrefs.SetInt("airconditionerSaved", 25);
+        }
+
+        if(sceneLoad>1){
             time = PlayerPrefs.GetFloat("timeSaved"); 
             temperature = PlayerPrefs.GetFloat("temperatureSaved");
             weather = PlayerPrefs.GetInt("weatherSaved");
             cool = PlayerPrefs.GetInt("coolSaved");
-            airconditioner = PlayerPrefs.GetInt("airconditionerSaved");   
+            airconditioner = PlayerPrefs.GetInt("airconditionerSaved");
+            PlayerPrefs.SetInt("sceneLoad", sceneLoad);
         }
     }
 
