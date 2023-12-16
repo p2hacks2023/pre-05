@@ -46,7 +46,7 @@ public class popup : MonoBehaviour
 
     void clickedYes()
     {
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene("Shop");
     }
     void clickedNo()
     {
