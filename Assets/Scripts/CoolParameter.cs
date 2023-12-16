@@ -58,9 +58,9 @@ public class CoolParameter : MonoBehaviour
 
                 if(parameter.temperature>=28){
                     parameter.cool -= 1;
-                }else if(parameter.temperature>=25 && parameter.temperature<28){
+                }else if(parameter.temperature>=25 && parameter.temperature<28 && parameter.cool<=constAirconCool){
                     parameter.cool += 2;
-                }else if(parameter.temperature>=23 && parameter.temperature<25 ){
+                }else if(parameter.temperature>=23 && parameter.temperature<25 && parameter.cool<=constAirconCool){
                     parameter.cool += 2;
                 }else if(parameter.temperature<23){
                     parameter.cool -= 1;
