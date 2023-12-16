@@ -4,7 +4,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-
 public class Parameter : MonoBehaviour
 {  
     [SerializeField] private UIDocument _uiDocument;
@@ -32,6 +31,8 @@ public class Parameter : MonoBehaviour
 
 
     public static float temptemp = 0;
+    // 花火イベントの回数
+    public static int fireworks = 0;
 
     //以下ゲーム内購入アイテム----------
 
