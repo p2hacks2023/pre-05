@@ -1,6 +1,6 @@
-wood_light:窓枠、キャットタワーのboard、ベッドの木枠、personal deskの天板
+wood_light:キャットタワーのboard、ベッドの木枠、personal deskの天板、額縁
 wood_dark1:時計の枠
-white:冷蔵庫(本体、ドア2つ)、シーリングライト、マットレス、時計盤
+white:冷蔵庫(本体、ドア2つ)、シーリングライト、マットレス、時計盤、扇風機
 lowTable:テレビ台
 cloth_light:ソファー、枕
 cloth_dark:掛け布団、キャットタワーのpole、personal deskの椅子の脚
@@ -9,3 +9,9 @@ metal_light:冷蔵庫の取っ手、クローゼットの取っ手、ドアノ�
 metal_dark:personal desk の机の脚、テレビ
 gray:ドア
 far:ペットべッド
+darkWood1:クローゼット、窓枠
+Select:扇風機の羽
+yawn:毛糸玉
+grass:猫草の草、猫じゃらし
+flooring:床
+
