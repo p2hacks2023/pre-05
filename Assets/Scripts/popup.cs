@@ -25,7 +25,10 @@ public class popup : MonoBehaviour
 
     public void goOutside()
     {
-        var element = _uiDocument.rootVisualElement.Q("popup");
+        var element = _uiDocument.rootVisualElement;
+        var popup = new VisualElement();
+        popup.AddToClassList("popup");
+        popup.name = "popup";
         var newVisualElement = new VisualElement();
         newVisualElement.AddToClassList("goOutside");
         newVisualElement.name = "goOutside";
@@ -35,10 +38,11 @@ public class popup : MonoBehaviour
         yesButton.name = "goOutsideYes";
         var noButton = new Button();
         noButton.AddToClassList("No");  
-        noButton.name = "goOutsideNo";      
+        noButton.name = "goOutsideNo"; 
+        popup.Add(newVisualElement);     
         newVisualElement.Add(yesButton);
         newVisualElement.Add(noButton);
-        element.Add(newVisualElement);
+        element.Add(popup);
 
         yesButton.clicked += clickedYes;
         noButton.clicked += clickedNo;
@@ -50,7 +54,7 @@ public class popup : MonoBehaviour
     }
     void clickedNo()
     {
-        var element = _uiDocument.rootVisualElement.Q("goOutside");
+        var element = _uiDocument.rootVisualElement.Q("popup");
         element.RemoveFromHierarchy();
     }
 }
