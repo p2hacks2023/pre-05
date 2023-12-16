@@ -18,7 +18,7 @@
     <ui:VisualElement class="right">
         <ui:VisualElement class="meterFrame" name="meterFrame">
             <ui:VisualElement class="meterBackground">
-                <ui:VisualElement class="meterFrontground"/>
+                <ui:VisualElement class="meterFrontground" name="meterFrontground"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

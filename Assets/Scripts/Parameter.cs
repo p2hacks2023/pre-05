@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Parameter : MonoBehaviour
 {
@@ -27,17 +29,21 @@ public class Parameter : MonoBehaviour
     public int watermelon = 0;
     //ホットコーヒーの所持数
     public int coffe = 0;
+    [SerializeField] private UIDocument _uiDocument;
+    VisualElement element;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        element = _uiDocument.rootVisualElement.Q("meterFrontground");
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
+        // 360pxを基準にしている
+        element.style.height = 360-(int)(cool*3.6);
     }
 }
