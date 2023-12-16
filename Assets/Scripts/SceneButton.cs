@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class GameSystem : MonoBehaviour
+public class SceneButton : MonoBehaviour
 {
 
 	public void startGame()

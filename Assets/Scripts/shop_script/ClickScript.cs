@@ -6,12 +6,12 @@ using UnityEditor;
 public class ClickScript : MonoBehaviour
 {
 
-    Parameter parameter;
+    //Parameter parameter;
 
   // Use this for initialization
   void Start()
   {
-    parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
+    //parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
   }
 
   // Update is called once per frame
@@ -22,30 +22,40 @@ public class ClickScript : MonoBehaviour
 
   public void ButtonClick0()
   {
-    parameter.shopItemSelect=0;
+    Parameter.shopItemSelect=0;
   }
   public void ButtonClick1()
   {
-    parameter.shopItemSelect=1;
+    Parameter.shopItemSelect=1;
   }
   public void ButtonClick2()
   {
-    parameter.shopItemSelect=2;
+    Parameter.shopItemSelect=2;
   }
   public void ButtonClick3()
   {
-    parameter.shopItemSelect=3;
+    Parameter.shopItemSelect=3;
   }
 
   public void ButtonClickYes()
   {
-    if(parameter.shopItemSelect==0)parameter.icecream += 1 ;
+    if(Parameter.shopItemSelect==0 && Parameter.money>=Parameter.ICECREAMPRICE){
+      Parameter.icecream += 1 ;
+      Parameter.money -= Parameter.ICECREAMPRICE;
+    }
   
-    else if(parameter.shopItemSelect==1)parameter.watermelon += 1 ;
+    else if(Parameter.shopItemSelect==1 && Parameter.money>=Parameter.WATERMELONPRICE){
+      Parameter.watermelon += 1 ;
+      Parameter.money -= Parameter.WATERMELONPRICE;
+    }
   
-    else if(parameter.shopItemSelect==2)parameter.coffe += 1 ;
- 
-    else if(parameter.shopItemSelect==3)parameter.fish += 1 ;
+    else if(Parameter.shopItemSelect==2 && Parameter.money>=Parameter.COFFEPRICE){
+      Parameter.coffe += 1 ;
+      Parameter.money -= Parameter.COFFEPRICE;
+    }
+    else if(Parameter.shopItemSelect==3 && Parameter.money>=Parameter.FISHPRICE){
+      Parameter.fish += 1 ;
+      Parameter.money -= Parameter.COFFEPRICE;
+    }
   }
-
 }
