@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 613549699fe78ea478102ca2b19a7e8f
+  - enabled: 1
+    path: Assets/Scenes/Fireworks.unity
+    guid: 7efa5eddbf0759145a6801ca75fc02bd
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
