@@ -23,5 +23,19 @@
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="popup" class="popup">
+    <!--
+    <ui:VisualElement class="popup" name="popup">
+        <ui:VisualElement class="airCon">
+
+            <ui:VisualElement class="airconFrame">
+                <ui:Label class="airconTemp japaneseFont" name="airconTemp" text="50"/>
+                <ui:Label class="airconC japaneseFont" text="°C"/>
+            </ui:VisualElement>
+
+            <ui:Button class="airconTurn" name="airconTurn" text="on"/>
+            <ui:Button class="airconUp" name="airconUp" text="up"/>
+            <ui:Button class="airconDown" name="airconDown" text="down"/>
+        </ui:VisualElement>
     </ui:VisualElement>
+    -->
 </ui:UXML>
