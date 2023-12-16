@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6c69b53bc916eb34f8fb8f05e6d777ca
+timeCreated: 1506274984
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101035
+  packageName: Fireworks
+  packageVersion: 1.0
+  assetPath: Assets/Fireworks/Battery/Prefab/Battery.prefab
+  uploadId: 206359

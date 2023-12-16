@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4da2d6f1562c4b6479c3d2c425e77371
+timeCreated: 1505848971
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101035
+  packageName: Fireworks
+  packageVersion: 1.0
+  assetPath: Assets/Fireworks/Firecracker 3/Materials/Fuse.mat
+  uploadId: 206359
