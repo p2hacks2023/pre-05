@@ -17,6 +17,7 @@ public class popup : MonoBehaviour
         parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
         // goOutside();
         // popupAircon();
+        // popupFrige();
     }
 
     public void goOutside()
@@ -99,11 +100,6 @@ public class popup : MonoBehaviour
         turn.clickable.clicked += airconTurnFunc;
         element.RegisterCallback<MouseDownEvent>(e => clickedNo());
     }
-
-    void debug()
-    {
-        Debug.Log("Debug");
-    }
     void airconUpFunc() {
         parameter.airconditioner++;
         var element = _uiDocument.rootVisualElement.Q<Label>("airconTemp");
@@ -138,5 +134,80 @@ public class popup : MonoBehaviour
     {
         var element = _uiDocument.rootVisualElement.Q("popup");
         element.RemoveFromHierarchy();
+    }
+    void useSuika()
+    {
+        var element = _uiDocument.rootVisualElement;
+        var popup2 = new VisualElement();
+        popup2.AddToClassList("popup2");
+        popup2.name = "popup2";
+
+        var useQyestion = new VisualElement();
+        useQyestion.AddToClassList("useQuestion");
+        useQyestion.name = "useQuestion";
+
+        var yes = new Button();
+        yes.AddToClassList("Yes");
+        yes.name = "Yes";
+        var no = new Button();
+        no.AddToClassList("No");
+        no.name = "No";
+
+        useQyestion.Add(yes);
+        useQyestion.Add(no);
+        popup2.Add(useQyestion);
+        element.Add(popup2);
+
+        yes.clicked += clickedNo;
+        yes.clicked += deletePopup2;
+        no.clicked += deletePopup2;
+    }
+    void deletePopup2()
+    {
+        var element = _uiDocument.rootVisualElement.Q("popup2");
+        element.RemoveFromHierarchy();
+    }
+    public void popupFrige()
+    {
+        var element = _uiDocument.rootVisualElement;
+        var popup = new VisualElement();
+        popup.AddToClassList("popup");
+        popup.name = "popup";
+
+        var frige = new VisualElement();
+        frige.AddToClassList("frige");
+        frige.name = "frige";
+        var frigeItemFrame = new VisualElement();
+        frigeItemFrame.AddToClassList("frigeItemFrame");
+
+        var suika = new Button();
+        suika.AddToClassList("suika");
+        suika.AddToClassList("item");
+        suika.name = "suika";
+        var ice = new Button();
+        ice.AddToClassList("ice");
+        ice.AddToClassList("item");
+        ice.name = "ice";
+        var coffe = new Button();
+        coffe.AddToClassList("coffe");
+        coffe.AddToClassList("item");
+        coffe.name = "coffe";
+        var fish = new Button();
+        fish.AddToClassList("fish");
+        fish.AddToClassList("item");
+        fish.name = "fish";
+
+        frigeItemFrame.Add(suika);
+        frigeItemFrame.Add(ice);
+        frigeItemFrame.Add(coffe);
+        frigeItemFrame.Add(fish);
+        frige.Add(frigeItemFrame);
+        popup.Add(frige);
+        element.Add(popup);
+        suika.clicked += useSuika;
+    }
+    void debug()
+    {
+        Debug.Log("Debug");
     }
 }

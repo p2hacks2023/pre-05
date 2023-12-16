@@ -44,15 +44,15 @@
 }
 .right {
     position: absolute;
-    top: -10%;
-    right: 100px;
+    top: -20%;
+    right: -60px;
     height: auto;
     width: 200px;
 }
 .meterFrame {
     background-image: url('/Assets/UI/Images/meter.png');
-    height: 500px;
-    width: 300px;
+    height: 300px;
+    width: 140px;
     position: relative;
     top: 30%;
 }
@@ -62,12 +62,12 @@
 }
 .meterBackground {
     position: relative;
-    top: 140px;
-    left: 114px;
+    top: 80px;
+    left: 50px;
     background-color: #AAC8FF;
     background-image: url('/Assets/UI/Images/coolParameter.png');
-    height: 300px;
-    width: 70px;
+    height: 170px;
+    width: 40px;
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 1px;
@@ -87,23 +87,25 @@
 .popup {
     position: absolute;
     align-self: center;
-    top: 20%;
-    height: 600px;
-    width: 700px;
+    top: 0px;
+    left: 0px;
+    height: 1024px;
+    width: 1536px;
 }
 .goOutside {
     background-image: url('/Assets/UI/Images/goOutside2.PNG');
-    height: 100%;
-    width: auto;
+    position: relative;
+    left: 60px;
     flex-direction: row;
-
+    height: 40%;
+    width: 30%;
 }
 .Yes {
     background-image: url('/Assets/UI/Images/Yes.PNG');
     height: 10%;
-    width: 10%;
+    width: 15%;
     top: 50%;
-    left: 30%;
+    left: 25%;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -112,9 +114,9 @@
 .No {
     background-image: url('/Assets/UI/Images/No.PNG');
     height: 10%;
-    width: 10%;
+    width: 15%;
     top: 50%;
-    left: 50%;
+    left: 43%;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -122,17 +124,18 @@
 }
 .airCon {
     background-image: url('/Assets/UI/Images/aircon.png');
-    height: 380px;
-    width: 200px;
+    height: 200px;
+    width: 100px;
     flex-direction: row;
-    align-self: flex-end;
+    position: relative;
+    left: 400px;
+    top: 50px;
 }
 .airconFrame {
     flex-direction: row;
     color: gray;
     position: relative;
-    top: 80px;
-    left: 70px;
+    top: 30px;
 }
 .airconTemp {
     margin-right: 30px;
@@ -143,7 +146,6 @@
     position: relative;
     top: 210px;
     left:10px;
-    background-color: clear;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -155,7 +157,6 @@
     position: relative;
     top: 175px;
     left: 35px;
-    background-color: clear;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -167,9 +168,56 @@
     position: relative;
     top: 248px;
     left: -15px;
-    background-color: clear;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
     border-left-width: 0px;
+}
+.frige {
+    background-image: url('/Assets/UI/Images/frige.png');
+    height: 300px;
+    width: 400px;
+    positon: relative;
+    top: 100px;
+    left: 70px;
+}
+.frigeItemFrame {
+    flex-direction: row;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+.suika {
+    background-image: url('/Assets/ShopTextures/nekoWaternelon.png');
+}
+.coffe {
+    background-image: url('/Assets/ShopTextures/nekoCoffe.png');
+}
+.ice {
+    background-image: url('/Assets/ShopTextures/nekoIcecream.png');
+}
+.fish {
+    background-image: url('/Assets/ShopTextures/nokoFish.png');
+}
+.item {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    margin-left: 10px;  
+}
+.popup2 {
+    position: absolute;
+    align-self: center;
+    top: 0px;
+    left: 0px;
+    height: 1024px;
+    width: 1536px;
+}
+.useQuestion {
+    position: relative;
+    left: 70px;
+    background-image: url('/Assets/UI/Images/useQuestion.png');
+    flex-direction: row;
+    height: 40%;
+    width: 30%;
 }

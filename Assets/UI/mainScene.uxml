@@ -18,9 +18,28 @@
     <ui:VisualElement class="right">
         <ui:VisualElement class="meterFrame" name="meterFrame">
             <ui:VisualElement class="meterBackground">
-                <ui:VisualElement class="meterFrontground" name="meterFrontground"/>
+                <ui:VisualElement class="meterFrontground" name="meterFrontground">
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <!--
+    <ui:VisualElement class="popup" name="popup">
+        <ui:VisualElement class="frige">
+            <ui:VisualElement class="frigeItemFrame">
+                <ui:Button name="suika" class="item suika"/>
+                <ui:Button name="coffe" class="item coffe"/>
+                <ui:Button name="ice" class="item ice"/>
+                <ui:Button name="fish" class="item fish"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 
+    <ui:VisualElement class="popup2" name="popup2">
+        <ui:VisualElement class="useQuestion" name="useQuestion">
+            <ui:Button class="Yes" name="Yes"/>
+            <ui:Button class="No" name="No"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    -->
 </ui:UXML>
