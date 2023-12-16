@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class popup : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class popup : MonoBehaviour
         
     }
 
-    void goOutside()
+    public void goOutside()
     {
         var element = _uiDocument.rootVisualElement.Q("popup");
         var newVisualElement = new VisualElement();
@@ -45,7 +46,7 @@ public class popup : MonoBehaviour
 
     void clickedYes()
     {
-        Debug.Log("Yes");
+        SceneManager.LoadScene("Title");
     }
     void clickedNo()
     {
