@@ -2,10 +2,21 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+    
+
+
+
+
 public class SceneButton : MonoBehaviour
-
-
 {
+	Parameter parameter;
+
+	
+	void Start()
+    {
+        parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
+
+    }
 
 	public void startGame()
 	{
@@ -26,3 +37,4 @@ public class SceneButton : MonoBehaviour
 
 	}
 }
+
