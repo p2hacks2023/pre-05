@@ -596,7 +596,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1337166047}
   selectedCommands:
-  - {fileID: 1337166058}
+  - {fileID: 1337166048}
   variables: []
   description: 
   stepPause: 0
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
+    x: 66
     y: 70
     width: 115.21
     height: 40
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "\u3053\u306E\u732B\u306E\u540D\u524D\u306F\u300C\u304C\u3044\u306D\u3093\u300D\u3002"
+  storyText: "\u3053\u306E\u732B\u306E\u540D\u524D\u306F\u300C\u306D\u3053\u69D8\u300D\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: "\u304C\u3044\u306D\u3093"
+  nameText: "\u306D\u3053\u69D8"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
