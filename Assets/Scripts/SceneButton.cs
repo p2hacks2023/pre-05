@@ -9,4 +9,13 @@ public class GameSystem : MonoBehaviour
 	{
 		SceneManager.LoadScene("Opening");
 	}
+	public void moveMain()
+	{
+		SceneManager.LoadScene("Main Scene");
+	}
+	public void moveShop()
+	{
+		SceneManager.LoadScene("Shop");
+	
+	}
 }
