@@ -8,16 +8,16 @@ public class ItemTextCntrol : MonoBehaviour
    // UI Text指定用
     public Text TextFrame;
     // 表示する変数
-    Parameter parameter;
+   // Parameter parameter;
  
     // Use this for initialization
     void Start () {
-        parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
+       // parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
 
     }
      
     // Update is called once per frame
     void Update () {
-        TextFrame.text = string.Format("icecream{0}", parameter.icecream);
+        TextFrame.text = string.Format("icecream{0}", Parameter.icecream);
     }
 }
