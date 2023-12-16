@@ -17,10 +17,5 @@
     </ui:VisualElement>
     <ui:VisualElement class="right" />
     <ui:VisualElement name="popup" class="popup">
-
-        <ui:VisualElement class="goOutside">
-            <ui:Button class="Yes"/>
-            <ui:Button class="No" />
-        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

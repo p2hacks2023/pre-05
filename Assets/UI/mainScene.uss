@@ -59,14 +59,14 @@
 .Yes {
     background-image: url('/Assets/UI/Images/Yes.PNG');
     height: 10%;
-    width: auto;
+    width: 10%;
     top: 50%;
     left: 30%;
 }
 .No {
     background-image: url('/Assets/UI/Images/No.PNG');
     height: 10%;
-    width: auto;
+    width: 10%;
     top: 50%;
     left: 50%;
 }
