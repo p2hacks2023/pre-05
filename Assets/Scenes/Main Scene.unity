@@ -3063,60 +3063,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.6, z: 0.5}
   m_Center: {x: 0, y: 0.4, z: 0}
---- !u!1 &900421626
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 900421628}
-  - component: {fileID: 900421627}
-  m_Layer: 0
-  m_Name: F
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &900421627
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900421626}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!4 &900421628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900421626}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3980637, y: 0.7206106, z: 0.95915914}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903972395
 GameObject:
   m_ObjectHideFlags: 0
@@ -5652,6 +5598,7 @@ GameObject:
   - component: {fileID: 1764177330}
   - component: {fileID: 1764177331}
   - component: {fileID: 1764177332}
+  - component: {fileID: 1764177333}
   m_Layer: 0
   m_Name: GameSystem
   m_TagString: Untagged
@@ -5715,10 +5662,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4840592bcc2794e258ef675fb6e42b06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uiDocument: {fileID: 1637931352}
   time: 0
   temperature: 0
   weather: 0
-  cool: 0
+  cool: 10
+  airconSwitch: 0
   airconditioner: 0
   catName: "\u6982\u5FF5\uFF88\uFF7A"
 --- !u!114 &1764177331
@@ -5747,6 +5696,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiDocument: {fileID: 1637931352}
+--- !u!114 &1764177333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764177326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7889dc66f9b8f694f9fe92234525d839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  airconTimer: 0
 --- !u!1 &1773646676
 GameObject:
   m_ObjectHideFlags: 0
@@ -7899,7 +7861,6 @@ SceneRoots:
   - {fileID: 1101444483}
   - {fileID: 236096861}
   - {fileID: 680085648}
-  - {fileID: 900421628}
   - {fileID: 1693681651}
   - {fileID: 7638153906349085543}
   - {fileID: 1276338833}

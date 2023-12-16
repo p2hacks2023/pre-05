@@ -6,7 +6,10 @@ using UnityEngine.UIElements;
 
 
 public class Parameter : MonoBehaviour
-{   
+{  
+    [SerializeField] private UIDocument _uiDocument;
+    VisualElement element;
+
     //mainsceneの読み込み回数
     public static int sceneLoad = 0;
 
@@ -42,9 +45,6 @@ public class Parameter : MonoBehaviour
     //スイカの所持数
     public static int watermelon = 0;
     //ホットコーヒーの所持数
-    public int coffe = 0;
-    [SerializeField] private UIDocument _uiDocument;
-    VisualElement element;
     public static int coffe = 0;
     //魚の所持数
     public static int fish = 0;
@@ -96,8 +96,11 @@ public class Parameter : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        // 360pxを基準にしている
-        element.style.height = 360-(int)(cool*3.6);
+        // 340pxを基準にしている
+        if (element != null)
+        {
+            element.style.height = 340-(int)(cool*3.4);
+        }
         // 時間パラメータとして扱いたい数値の保存
         PlayerPrefs.SetFloat("timeSaved", time);
         PlayerPrefs.SetFloat("temperatureSaved", temperature);

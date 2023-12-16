@@ -51,15 +51,22 @@
 }
 .meterFrame {
     background-image: url('/Assets/UI/Images/meter.png');
-    height: 700px;
-    width: 400px;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: 30%;
+}
+.meterLabel {
+    align-self: center;
+    color: black;
 }
 .meterBackground {
     position: relative;
-    top: 180px;
-    left: 164px;
+    top: 140px;
+    left: 114px;
     background-color: #AAC8FF;
-    height: 360px;
+    background-image: url('/Assets/UI/Images/coolParameter.png');
+    height: 300px;
     width: 70px;
     border-top-width: 1px;
     border-right-width: 1px;
@@ -72,7 +79,7 @@
 }
 .meterFrontground {
     background-color: #ffffff;
-    height: 100px;
+    height: 0px;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

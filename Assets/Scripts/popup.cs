@@ -64,6 +64,14 @@ public class popup : MonoBehaviour
         airconC.AddToClassList("airconC");
         airconC.AddToClassList("japaneseFont");
         airconC.text = "°C";
+        if (parameter.airconSwitch == 0)
+        {
+            airconTemp.style.color = Color.clear;
+        }
+        else
+        {
+            airconTemp.style.color = Color.gray;
+        }
     
         var turn = new Button();
         turn.AddToClassList("airconTurn");
@@ -108,7 +116,18 @@ public class popup : MonoBehaviour
     }
     void airconTurnFunc() {
         // エアコンのない内部処理とマージしてから設定
-        debug();
+        if (parameter.airconSwitch == 0)
+        {
+            parameter.airconSwitch = 1;
+            var airconTemp = _uiDocument.rootVisualElement.Q("airconTemp");
+            airconTemp.style.color = Color.gray;
+        }
+        else
+        {
+            parameter.airconSwitch = 0;
+            var airconTemp = _uiDocument.rootVisualElement.Q<Label>("airconTemp");
+            airconTemp.style.color = Color.clear;
+        }
     }
 
     void clickedShopYes()
