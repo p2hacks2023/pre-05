@@ -72,7 +72,7 @@ public class Parameter : MonoBehaviour
             temperature = PlayerPrefs.GetFloat("temperatureSaved");
             weather = PlayerPrefs.GetInt("weatherSaved");
             cool = PlayerPrefs.GetInt("coolSaved");
-            airconditioner = PlayerPrefs.GetFloat("airconditionerSaved");   
+            airconditioner = PlayerPrefs.GetInt("airconditionerSaved");   
         }
     }
 
@@ -85,7 +85,7 @@ public class Parameter : MonoBehaviour
         PlayerPrefs.SetFloat("temperatureSaved", temperature);
         PlayerPrefs.SetInt("weatherSaved", weather);
         PlayerPrefs.SetInt("coolSaved", cool);
-        PlayerPrefs.SetFloat("airconditionerSaved", airconditioner);
+        PlayerPrefs.SetInt("airconditionerSaved", airconditioner);
 
     }
 }
