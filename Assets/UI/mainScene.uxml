@@ -4,18 +4,18 @@
         <ui:VisualElement class="frameBlack">
             <ui:VisualElement class="frameBlue">
                 <ui:VisualElement class="time">
-                    <ui:Label text="HH" class="hour japaneseFont" name="hour" />
+                    <ui:Label text="HH" name="hour" class="hour japaneseFont" />
                     <ui:Label text=":" class="japaneseFont" />
-                    <ui:Label text="mm" class="japaneseFont minutes" name="minutes"/>
+                    <ui:Label text="mm" name="minutes" class="japaneseFont minutes" />
                 </ui:VisualElement>
                 <ui:VisualElement class="templatureFrame">
-                    <ui:Label text="30" class="templature japaneseFont" name="templature"/>
+                    <ui:Label text="30" name="templature" class="templature japaneseFont" />
                     <ui:Label text="°C" class="japaneseFont" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement class="right" />
-    <ui:VisualElement class="popup" name="popup">
+    <ui:VisualElement name="popup" class="popup">
     </ui:VisualElement>
 </ui:UXML>
