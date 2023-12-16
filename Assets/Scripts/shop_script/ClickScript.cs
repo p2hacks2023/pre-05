@@ -12,6 +12,7 @@ public class ClickScript : MonoBehaviour
   void Start()
   {
     //parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
+    
   }
 
   // Update is called once per frame
