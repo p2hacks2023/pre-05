@@ -26,6 +26,6 @@ public class UI_load : MonoBehaviour
     {
         hour.text = Mathf.FloorToInt(parameter.time*5/60+10).ToString("0");
         minutes.text = (parameter.time*5%60).ToString("00");
-        templature.text = parameter.temperature.ToString();
+        templature.text = parameter.temperature.ToString("0");
     }
 }

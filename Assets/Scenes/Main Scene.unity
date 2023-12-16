@@ -1827,7 +1827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432235802}
   - component: {fileID: 432235803}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Video Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5123,6 +5123,7 @@ GameObject:
   - component: {fileID: 1637931353}
   - component: {fileID: 1637931352}
   - component: {fileID: 1637931354}
+  - component: {fileID: 1637931355}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -5137,7 +5138,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637931351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -5154,7 +5155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637931351}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.6732197, y: -2.6777658, z: 10.907672}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5174,6 +5175,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiDocument: {fileID: 1637931352}
+--- !u!95 &1637931355
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637931351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 620da630a8999254688b5b6c93ec4dee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1658804460
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,6 +9206,7 @@ SceneRoots:
   - {fileID: 1267136285}
   - {fileID: 543450652159529010}
   - {fileID: 585644533}
+  - {fileID: 1637931353}
   - {fileID: 65110968}
   - {fileID: 1764177329}
   - {fileID: 1667826445}
