@@ -5721,10 +5721,6 @@ MonoBehaviour:
   cool: 0
   airconditioner: 0
   catName: "\u6982\u5FF5\uFF88\uFF7A"
-  money: 0
-  icecream: 0
-  watermelon: 0
-  coffe: 0
 --- !u!114 &1764177331
 MonoBehaviour:
   m_ObjectHideFlags: 0
