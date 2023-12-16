@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/mainScene.uss?fileID=7433441132597879392&amp;guid=0511cfdcb17334db886764c0226a23dd&amp;type=3#mainScene" />
+    <ui:VisualElement class="left">
+        <ui:VisualElement class="frameBlack">
+            <ui:VisualElement class="frameBlue">
+                <ui:VisualElement class="time">
+                    <ui:Label text="HH" name="hour" class="hour japaneseFont" />
+                    <ui:Label text=":" class="japaneseFont" />
+                    <ui:Label text="mm" name="minutes" class="japaneseFont minutes" />
+                </ui:VisualElement>
+                <ui:VisualElement class="templatureFrame">
+                    <ui:Label text="30" name="templature" class="templature japaneseFont" />
+                    <ui:Label text="°C" class="japaneseFont" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="right" />
+    <ui:VisualElement name="popup" class="popup">
+    </ui:VisualElement>
+</ui:UXML>

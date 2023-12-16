@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="testUI.uss" />
+    <!-- 左上 : バージョン表記 -->
+    <ui:Label text="ver1.0.0-preview" name="Version" class="lt"/>
+    <!-- 右上 : ユーザーID表記 -->
+    <ui:Label text="UserId : 10378426348" class="rt"/>
+
+    <!-- 中央UIパーツ -->
+    <ui:VisualElement name="LogoContainer">
+        <!-- ロゴ画像 -->
+        <ui:VisualElement name="ProductLogo" />
+        <!-- ボタン -->
+        <ui:Button text="TAP TO START&#10;" name="BtnTapToStart" />
+    </ui:VisualElement>
+
+    <!-- 左下 : コピーライト表記 -->
+    <ui:Label text="2020(C)ohbashunsuke" class="lb" />
+</ui:UXML>

@@ -1,0 +1,72 @@
+.japaneseFont {
+    -unity-font-definition: url('/Assets/Fungus/Fonts/Amaranth/Amaranth-Regular.otf');
+    font-size: 30px;
+}
+.left {
+    position: absolute;
+    left: 5%;
+    top: 0px;
+}
+.frameBlack {
+    background-color: black;
+    border-radius: 0% 0% 5px 5px; 
+}
+.frameBlue {
+    background-color: #AAC8FF;
+    border-radius: 0% 0% 5px 5px; 
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    flex-direction: row;
+}
+.time {
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.hour {
+    margin-right: 0px;
+}
+.minute {
+    margin-left: 0px;
+}
+.templatureFrame {
+    flex-direction: row;
+    padding-right: 10px;
+}
+.templatureFrame Label {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: white;
+}
+.popup {
+    position: absolute;
+    align-self: center;
+    top: 20%;
+    height: 600px;
+    width: 700px;
+}
+.goOutside {
+    background-image: url('/Assets/UI/Images/goOutside2.PNG');
+    height: 100%;
+    width: auto;
+    flex-direction: row;
+
+}
+.Yes {
+    background-image: url('/Assets/UI/Images/Yes.PNG');
+    height: 10%;
+    width: 10%;
+    top: 50%;
+    left: 30%;
+}
+.No {
+    background-image: url('/Assets/UI/Images/No.PNG');
+    height: 10%;
+    width: 10%;
+    top: 50%;
+    left: 50%;
+}
