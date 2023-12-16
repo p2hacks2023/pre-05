@@ -5709,6 +5709,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   airconTimer: 0
+  airconTimer2: 0
+  constAirconCool: 60
 --- !u!1 &1773646676
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,10 +7437,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7675636005826968582}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 1764177332}
+          m_TargetAssemblyTypeName: popup, popup
+          m_MethodName: popupFrige
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7591,10 +7593,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7675636005826968582}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 1764177332}
+          m_TargetAssemblyTypeName: popup, popup
+          m_MethodName: popupFrige
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7769,10 +7771,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7675636005826968582}
-          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
-          m_Mode: 5
+        - m_Target: {fileID: 1764177332}
+          m_TargetAssemblyTypeName: popup, popup
+          m_MethodName: popupFrige
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

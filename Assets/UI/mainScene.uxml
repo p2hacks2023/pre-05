@@ -22,5 +22,21 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
+    <!--
+    <ui:VisualElement class="popup" name="popup">
+        <ui:VisualElement class="useQuestion" name="useQuestion">
+            <ui:Button class="Yes" name="Yes"/>
+            <ui:Button class="No" name="No"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
 
+    <ui:VisualElement class="frige" name="frige">
+        <ui:VisualElement class="items">
+            <ui:Button class="suika item"/>
+            <ui:Button class="ice item"/>
+            <ui:Button class="fish item"/>
+            <ui:Button class="coffee item"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    -->
 </ui:UXML>

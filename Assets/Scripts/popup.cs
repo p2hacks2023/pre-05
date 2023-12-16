@@ -17,6 +17,8 @@ public class popup : MonoBehaviour
         parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
         // goOutside();
         // popupAircon();
+        // popupFrige();
+        // popupUseQuestion();
     }
 
     public void goOutside()
@@ -137,6 +139,67 @@ public class popup : MonoBehaviour
     void clickedNo()
     {
         var element = _uiDocument.rootVisualElement.Q("popup");
+        element.RemoveFromHierarchy();
+    }
+    void popupFrige()
+    {
+        var element = _uiDocument.rootVisualElement;
+        var frige = new VisualElement();
+        frige.AddToClassList("frige");
+        frige.name = "frige";
+        var items = new VisualElement();
+        items.AddToClassList("items");
+        var suika = new Button();
+        suika.AddToClassList("suika");
+        suika.AddToClassList("item");
+        var ice = new Button();
+        ice.AddToClassList("ice");
+        ice.AddToClassList("item");
+        var fish = new Button();
+        fish.AddToClassList("fish");
+        fish.AddToClassList("item");
+        var coffee = new Button();
+        coffee.AddToClassList("coffee");
+        coffee.AddToClassList("item");
+
+        items.Add(suika);
+        items.Add(ice);
+        items.Add(fish);
+        items.Add(coffee);
+        frige.Add(items);
+        element.Add(frige);
+
+        suika.clicked += popupUseQuestion;
+        frige.RegisterCallback<MouseDownEvent>(e => deleteFrige());
+    }
+    void popupUseQuestion()
+    {
+        var element = _uiDocument.rootVisualElement;
+        var popup = new VisualElement();
+        popup.AddToClassList("popup");
+        popup.name = "popup";
+        var useQuestion = new VisualElement();
+        useQuestion.AddToClassList("useQuestion");
+        useQuestion.name = "useQuestion";
+        var yesButton = new Button();
+        yesButton.AddToClassList("Yes");
+        yesButton.name = "Yes";
+        var noButton = new Button();
+        noButton.AddToClassList("No");
+        noButton.name = "No";
+
+        popup.Add(useQuestion);
+        useQuestion.Add(yesButton);
+        useQuestion.Add(noButton);
+        element.Add(popup);
+
+        yesButton.clicked += deleteFrige;
+        yesButton.clicked += clickedNo;
+        noButton.clicked += clickedNo;
+    }
+    void deleteFrige()
+    {
+        var element = _uiDocument.rootVisualElement.Q("frige");
         element.RemoveFromHierarchy();
     }
 }
