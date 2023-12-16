@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class Parameter : MonoBehaviour
@@ -38,6 +40,9 @@ public class Parameter : MonoBehaviour
     //スイカの所持数
     public static int watermelon = 0;
     //ホットコーヒーの所持数
+    public int coffe = 0;
+    [SerializeField] private UIDocument _uiDocument;
+    VisualElement element;
     public static int coffe = 0;
     //魚の所持数
     public static int fish = 0;
@@ -63,7 +68,8 @@ public class Parameter : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        element = _uiDocument.rootVisualElement.Q("meterFrontground");
         sceneLoad += 1;
 
         if(sceneLoad!=1){
@@ -79,12 +85,13 @@ public class Parameter : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
+        // 360pxを基準にしている
+        element.style.height = 360-(int)(cool*3.6);
         // 時間パラメータとして扱いたい数値の保存
         PlayerPrefs.SetFloat("timeSaved", time);
         PlayerPrefs.SetFloat("temperatureSaved", temperature);
         PlayerPrefs.SetInt("weatherSaved", weather);
         PlayerPrefs.SetInt("coolSaved", cool);
         PlayerPrefs.SetInt("airconditionerSaved", airconditioner);
-
     }
 }

@@ -15,7 +15,14 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement class="right" />
+    <ui:VisualElement class="right">
+        <ui:VisualElement class="meterFrame" name="meterFrame">
+            <ui:VisualElement class="meterBackground">
+                <ui:VisualElement class="meterFrontground" name="meterFrontground"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="popup" class="popup">
     <!--
     <ui:VisualElement class="popup" name="popup">
         <ui:VisualElement class="airCon">
