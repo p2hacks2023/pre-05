@@ -39,6 +39,7 @@ public class ClickScript : MonoBehaviour
 
   public void ButtonClickYes()
   {
+<<<<<<< HEAD
     if(Parameter.shopItemSelect==0 && Parameter.money>=Parameter.ICECREAMPRICE){
       Parameter.icecream += 1 ;
       Parameter.money -= Parameter.ICECREAMPRICE;
@@ -57,5 +58,14 @@ public class ClickScript : MonoBehaviour
       Parameter.fish += 1 ;
       Parameter.money -= Parameter.COFFEPRICE;
     }
+=======
+    if(Parameter.shopItemSelect==0)Parameter.icecream += 1 ;
+  
+    else if(Parameter.shopItemSelect==1)Parameter.watermelon += 1 ;
+  
+    else if(Parameter.shopItemSelect==2)Parameter.coffe += 1 ;
+ 
+    else if(Parameter.shopItemSelect==3)Parameter.fish += 1 ;
+>>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
   }
 }

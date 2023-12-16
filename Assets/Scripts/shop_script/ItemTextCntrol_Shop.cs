@@ -24,7 +24,11 @@ public class ItemTextCntrol_Shop : MonoBehaviour
  
     // Use this for initialization
     void Start () {
+<<<<<<< HEAD
         // = GameObject.Find("GameSystem").GetComponent<Parameter>();
+=======
+        //parameter = GameObject.Find("GameSystem").GetComponent<Parameter>();
+>>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
 
     }
      
@@ -35,8 +39,11 @@ public class ItemTextCntrol_Shop : MonoBehaviour
         itemPrice1.text = string.Format("{0} 円", Parameter.WATERMELONPRICE);
         itemPrice2.text = string.Format("{0} 円", Parameter.COFFEPRICE);
         itemPrice3.text = string.Format("{0} 円", Parameter.FISHPRICE);
+<<<<<<< HEAD
 
         haveMoney.text = string.Format("所持金：{0} 円", Parameter.money);
+=======
+>>>>>>> ec4c3cb079abb1ba61b6c67371ead276854c9578
         
         if(Parameter.shopItemSelect==0)
         itemBuy0.text = string.Format("{0} を {1} 円で購入しますか？\n所持数:{2}",Parameter.ITEMNAME0, Parameter.ICECREAMPRICE,Parameter.icecream);
