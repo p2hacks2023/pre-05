@@ -677,7 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  storyText: "\u4ECA\u65E5\u306F\u305B\u3063\u304B\u304F\u306E\u4F11\u65E5\u306A\u306E\u3067\u304C\u3044\u306D\u3093\u3068\u4E00\u7DD2\u306B\u6DBC\u3057\u3044\u4E00\u65E5\u3092\u904E\u3054\u3057\u3066\u307F\u307E\u3057\u3087\u3046\uFF01\uFF01\r\n"
+  storyText: "\u4ECA\u65E5\u306F\u305B\u3063\u304B\u304F\u306E\u4F11\u65E5\u306A\u306E\u3067\u306D\u3053\u69D8\u3068\u4E00\u7DD2\u306B\u6DBC\u3057\u3044\u4E00\u65E5\u3092\u904E\u3054\u3057\u3066\u307F\u307E\u3057\u3087\u3046\uFF01\uFF01\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: "\u753A\u306E\u3068\u3042\u308B\u5BB6\u3067\u306F\u4ECA\u306B\u3082\u6EB6\u3051\u305D\u3046\u306A\u30CD\u30B3\u304C\u4E00\u4EBA\u3002\r\n"
+  storyText: "\u753A\u306E\u3068\u3042\u308B\u5BB6\u3067\u306F\u4ECA\u306B\u3082\u6EB6\u3051\u305D\u3046\u306A\u30CD\u30B3\u304C\u4E00\u5339\u3002\r\n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -905,7 +905,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1337166058
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
