@@ -29,7 +29,7 @@
 
 ## スクリーンショット(任意)  
 ![image](https://github.com/p2hacks2023/pre-05/assets/36354624/76293914-c1ed-4f05-a9ce-9f503c1fbf57)
-<img width="1710" alt="スクリーンショット 2023-12-17 11 23 52" src="https://github.com/p2hacks2023/pre-05/assets/83445687/1ffe9745-61eb-4804-9cf0-a9169f47b8fe">
+![image](https://github.com/p2hacks2023/pre-05/assets/83445687/1ffe9745-61eb-4804-9cf0-a9169f47b8fe)
 
 ## 開発体制  
 
