@@ -240,3 +240,14 @@
 .achievements Label {
     color: white;
 }
+.firepopup {
+    height: 100%;
+}
+.fireworks {
+    background-image: url('/Assets/Textures/fireworks_poster.png');
+    width: 20%;
+    height: 50%;
+    align-self: center;
+    position: absolute;
+    bottom: 0%;
+}

@@ -209,4 +209,22 @@ public class popup : MonoBehaviour
         var element = _uiDocument.rootVisualElement.Q("frige");
         element.RemoveFromHierarchy();
     }
+    public void generateFire()
+    {
+        var element = _uiDocument.rootVisualElement;
+        var firepopup = new VisualElement();
+        firepopup.AddToClassList("firepopup");
+        firepopup.name = "firepopup";
+        var fire = new VisualElement();
+        fire.AddToClassList("fireworks");
+        firepopup.Add(fire);
+        element.Add(firepopup);
+
+        firepopup.RegisterCallback<MouseDownEvent>(e => deleteFire());
+    }
+    void deleteFire()
+    {
+        var element = _uiDocument.rootVisualElement.Q("firepopup");
+        element.RemoveFromHierarchy();
+    }
 }
