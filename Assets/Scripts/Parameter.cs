@@ -19,7 +19,7 @@ public class Parameter : MonoBehaviour
     // 天気
     public int weather = 0;
     // ひんやり度
-    public int cool = 2020;
+    public float cool = 2020f;
     //エアコンのOnOff認識　0->off 1->0n
     public int airconSwitch =0;
     // エアコンの温度
@@ -81,7 +81,7 @@ public class Parameter : MonoBehaviour
             PlayerPrefs.SetFloat("timeSaved", 0.0f);
             PlayerPrefs.SetFloat("temperatureSaved", 32.0f);
             PlayerPrefs.SetInt("weatherSaved", 0);
-            PlayerPrefs.SetInt("coolSaved", 50);
+            PlayerPrefs.SetFloat("coolSaved", 50);
             PlayerPrefs.SetInt("airconditionerSaved", 25);
             //Debug.Log(PlayerPrefs.GetFloat("temperatureSaved"));
         }
@@ -90,7 +90,7 @@ public class Parameter : MonoBehaviour
             time = PlayerPrefs.GetFloat("timeSaved"); 
             temperature = PlayerPrefs.GetFloat("temperatureSaved");
             weather = PlayerPrefs.GetInt("weatherSaved");
-            cool = PlayerPrefs.GetInt("coolSaved");
+            cool = PlayerPrefs.GetFloat("coolSaved");
             airconditioner = PlayerPrefs.GetInt("airconditionerSaved");
             PlayerPrefs.SetInt("sceneLoad", sceneLoad);
             Debug.Log(PlayerPrefs.GetFloat("temperatureSaved"));
@@ -112,10 +112,11 @@ public class Parameter : MonoBehaviour
         PlayerPrefs.SetFloat("timeSaved", time);
         PlayerPrefs.SetFloat("temperatureSaved", temperature);
         PlayerPrefs.SetInt("weatherSaved", weather);
-        PlayerPrefs.SetInt("coolSaved", cool);
+        PlayerPrefs.SetFloat("coolSaved", cool);
         PlayerPrefs.SetInt("airconditionerSaved", airconditioner);
 
        Debug.Log("UPDATE:"+PlayerPrefs.GetFloat("temperatureSaved"));
+        cool -= 0.01f;
 
     }
 }
