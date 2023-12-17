@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
 
 public class TimeElapsed : MonoBehaviour
 {
+    [SerializeField] private UIDocument _uiDocument;
     [SerializeField]
     // 経過時間を格納する変数
     private float time;
@@ -46,6 +49,10 @@ public class TimeElapsed : MonoBehaviour
                     Parameter.fireworks = 1;         
                     SceneManager.LoadScene("FireworksOpening");       
                 }
+                else if (Parameter.fireworks == 1)
+                {
+                    createAchive();
+                }
             }
         
         }
@@ -57,5 +64,25 @@ public class TimeElapsed : MonoBehaviour
             }
         }
 	}
+    void createAchive()
+    {
+        var element = _uiDocument.rootVisualElement;
+        var achive = new VisualElement();
+        achive.AddToClassList("achievements");
+        var achiveFrame = new VisualElement();
+        achiveFrame.AddToClassList("achievementsFrame");
+        var achiveText = new Label();
+        achiveText.text = "Get Achivements";
+
+        achive.Add(achiveFrame);
+        achiveFrame.Add(achiveText);
+        element.Add(achive);
+        achive.RegisterCallback<MouseDownEvent>(e => changeScene());
+
+    }
+    void changeScene()
+    {
+        SceneManager.LoadScene("Still");
+    }
 }
  

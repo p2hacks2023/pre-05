@@ -36,5 +36,10 @@ public class SceneButton : MonoBehaviour
 		SceneManager.LoadScene("Fireworks");
 
 	}
+	public void moveTitle()
+	{
+		SceneManager.LoadScene("Title");
+
+	}
 }
 
